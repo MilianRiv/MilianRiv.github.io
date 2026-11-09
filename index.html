@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>José de Jesús Milián Rivera · Portafolio de desarrollo</title>
+<meta name="description" content="Portafolio de José de Jesús Milián Rivera: aplicaciones Flutter, sitios web, APIs REST con Spring Boot y redes neuronales. Demos en vivo y código en GitHub.">
+<link rel="canonical" href="https://milianriv.github.io/">
+<meta property="og:title" content="José de Jesús Milián Rivera · Portafolio">
+<meta property="og:description" content="Apps Flutter, sitios web, APIs REST y redes neuronales. Demos en vivo y código en GitHub.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://milianriv.github.io/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"José de Jesús Milián Rivera","url":"https://milianriv.github.io/","sameAs":["https://github.com/MilianRiv"],"jobTitle":"Desarrollador de software"}
+</script>
+<style>
+:root{--bg:#0f1420;--card:#171e2e;--text:#e8ecf4;--muted:#9aa6bd;--accent:#5eead4;--line:#263048}
+@media (prefers-color-scheme:light){:root{--bg:#f6f8fc;--card:#fff;--text:#121826;--muted:#55627a;--accent:#0f766e;--line:#dde3ef}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:1000px;margin:0 auto;padding:0 16px}
+header.top{border-bottom:1px solid var(--line)}
+nav{display:flex;gap:20px;align-items:center;justify-content:space-between;padding:14px 0;flex-wrap:wrap}
+nav b{letter-spacing:.3px}
+nav div a{margin-left:18px;text-decoration:none;color:var(--muted)}
+nav div a:hover{color:var(--accent)}
+.hero{padding:72px 0 48px}
+.hero h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.15;margin:0 0 12px}
+.hero p{color:var(--muted);max-width:640px;font-size:1.1rem}
+.btn{display:inline-block;margin:8px 10px 0 0;padding:10px 18px;border-radius:8px;border:1px solid var(--accent);text-decoration:none;font-weight:600}
+.btn.primary{background:var(--accent);color:var(--bg)}
+section{padding:40px 0}
+h2{font-size:1.6rem;margin:0 0 20px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column}
+.card h3{margin:0 0 6px;font-size:1.15rem}
+.card p{color:var(--muted);margin:0 0 14px;flex:1;font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.tags span{font-size:.75rem;padding:2px 9px;border-radius:99px;border:1px solid var(--line);color:var(--muted)}
+.links a{margin-right:14px;font-weight:600;text-decoration:none}
+.links a:hover{text-decoration:underline}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.skills span{background:var(--card);border:1px solid var(--line);padding:6px 14px;border-radius:8px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);text-align:center;font-size:.9rem}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><nav>
+<b>J. Milián</b>
+<div><a href="#proyectos">Proyectos</a><a href="#tecnologias">Tecnologías</a><a href="#contacto">Contacto</a></div>
+</nav></div></header>
+
+<main class="wrap">
+<div class="hero">
+<h1>Hola, soy José de Jesús Milián Rivera</h1>
+<p>Desarrollador de software. Construyo aplicaciones móviles y web, APIs REST y proyectos con aprendizaje automático. Aquí reúno mis trabajos con demos que puedes abrir y el código fuente.</p>
+<a class="btn primary" href="#proyectos">Ver proyectos</a>
+<a class="btn" href="https://github.com/MilianRiv" rel="noopener">GitHub</a>
+</div>
+
+<section id="proyectos">
+<h2>Proyectos</h2>
+<div class="grid">
+
+<article class="card"><h3>SkinSpectrum v2</h3>
+<p>Aplicación demostrativa para la fase de aprobación de un modelo entrenado, con un proceso de validación probado en imágenes reales de distintos formatos.</p>
+<div class="tags"><span>Flutter</span><span>Dart</span><span>Web</span></div>
+<div class="links"><a href="https://milianriv.github.io/SkinSpectrum_v2/" rel="noopener">Demo en vivo</a><a href="https://github.com/MilianRiv/SkinSpectrum_v2" rel="noopener">Código</a></div></article>
+
+<article class="card"><h3>SI Market</h3>
+<p>Sitio web de una tienda virtual: portada, categorías de productos y diseño adaptable.</p>
+<div class="tags"><span>HTML</span><span>CSS</span></div>
+<div class="links"><a href="https://milianriv.github.io/simarket.github.io/" rel="noopener">Demo en vivo</a><a href="https://github.com/MilianRiv/simarket.github.io" rel="noopener">Código</a></div></article>
+
+<article class="card"><h3>SkinSpectrum (primera versión)</h3>
+<p>Primera versión de la aplicación multiplataforma, desarrollada en Flutter para Android, iOS y web.</p>
+<div class="tags"><span>Flutter</span><span>Dart</span><span>Android</span><span>iOS</span></div>
+<div class="links"><a href="https://github.com/MilianRiv/SkinSpectrum" rel="noopener">Código</a></div></article>
+
+<article class="card"><h3>Red neuronal convolucional (CNN)</h3>
+<p>Cuaderno de Jupyter con el entrenamiento de una red neuronal convolucional.</p>
+<div class="tags"><span>Python</span><span>Jupyter</span><span>CNN</span></div>
+<div class="links"><a href="https://nbviewer.org/github/MilianRiv/Red_Neuronal_CNN/blob/main/Untitled.ipynb" rel="noopener">Ver cuaderno</a><a href="https://github.com/MilianRiv/Red_Neuronal_CNN" rel="noopener">Código</a></div></article>
+
+<article class="card"><h3>API REST con Spring Boot</h3>
+<p>Tres versiones de una API REST con Spring Boot, cada una con una base de datos distinta: MongoDB, PostgreSQL y MySQL.</p>
+<div class="tags"><span>Java</span><span>Spring Boot</span><span>MongoDB</span><span>PostgreSQL</span><span>MySQL</span></div>
+<div class="links"><a href="https://github.com/MilianRiv/springboot-mongodb" rel="noopener">MongoDB</a><a href="https://github.com/MilianRiv/springboot-postgresql" rel="noopener">PostgreSQL</a><a href="https://github.com/MilianRiv/springboot-mysql" rel="noopener">MySQL</a></div></article>
+
+<article class="card"><h3>Proyecto integrador (PI)</h3>
+<p>Sistema web con PHP y base de datos SQL: autenticación, categorías y gestión de personal. Proyecto de la UTCV.</p>
+<div class="tags"><span>PHP</span><span>MySQL</span></div>
+<div class="links"><a href="https://github.com/MilianRiv/PI" rel="noopener">Código</a></div></article>
+
+<article class="card"><h3>Proyecto web (UTCV)</h3>
+<p>Sitio web en PHP con galería, videos, fotografía y secciones comerciales.</p>
+<div class="tags"><span>PHP</span><span>JavaScript</span><span>CSS</span></div>
+<div class="links"><a href="https://github.com/MilianRiv/Proyecto_WEB" rel="noopener">Código</a></div></article>
+
+</div>
+</section>
+
+<section id="tecnologias">
+<h2>Tecnologías</h2>
+<div class="skills"><span>Flutter / Dart</span><span>Java / Spring Boot</span><span>PHP</span><span>HTML / CSS / JavaScript</span><span>Python / Jupyter</span><span>MongoDB</span><span>PostgreSQL</span><span>MySQL</span><span>Git / GitHub</span></div>
+</section>
+
+<section id="contacto">
+<h2>Contacto</h2>
+<p>Puedes ver todo mi trabajo y escribirme desde mi perfil de <a href="https://github.com/MilianRiv" rel="noopener">GitHub</a>.</p>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 José de Jesús Milián Rivera</div></footer>
+</body>
+</html>
