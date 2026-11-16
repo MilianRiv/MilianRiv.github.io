@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-palette="aurora">
+<html lang="en" data-palette="ocean">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://milianriv.github.io/assets/foto.jpg">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d4ff3a' stroke='%23121212' stroke-width='4'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%23121212'%3EJM%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235cc8ff' stroke='%23121212' stroke-width='4'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%23121212'%3EJM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -221,24 +221,13 @@ footer{padding:36px 0;color:var(--muted);text-align:center;font:500 .8rem var(--
 @media (max-width:720px){.card.feature{display:flex;padding:22px}.card.feature .thumb{margin:-22px -22px 16px;aspect-ratio:16/6;border-right:0;border-bottom:2px solid var(--ink)}}
 
 /* paletas */
-:root[data-palette="aurora"]{--bg:#edf6f4;--surface:#fbfffd;--surface2:#dcebe7;--line:#c3d8d2;--lime:#53f0c8;--coral:#ff6fa8;--accent:#5b2fd1;--accent-soft:#e5defc}
 :root[data-palette="ocean"]{--bg:#eaf2fb;--surface:#fafdff;--surface2:#d8e6f5;--line:#bfd2e8;--lime:#5cc8ff;--coral:#ff5d8f;--accent:#2f4bdc;--accent-soft:#dde3ff}
-:root[data-palette="sunset"]{--bg:#fbf0e4;--surface:#fffaf3;--surface2:#f2e1cd;--line:#e3cdb2;--lime:#ffb627;--coral:#ff4d6d;--accent:#7a2fc9;--accent-soft:#ecdcff}
-@media (prefers-color-scheme:dark){:root[data-palette="aurora"]:not([data-theme="light"]){--bg:#07121a;--surface:#0f1d28;--surface2:#162736;--line:#223545;--lime:#53f0c8;--coral:#ff7ab8;--accent:#b7a4ff;--accent-soft:#261f4d}}
 @media (prefers-color-scheme:dark){:root[data-palette="ocean"]:not([data-theme="light"]){--bg:#070d1f;--surface:#0e1830;--surface2:#15234a;--line:#22335f;--lime:#5cc8ff;--coral:#ff6f9c;--accent:#93a7ff;--accent-soft:#1a2760}}
-@media (prefers-color-scheme:dark){:root[data-palette="sunset"]:not([data-theme="light"]){--bg:#150c16;--surface:#211422;--surface2:#2c1a2e;--line:#43264a;--lime:#ffb627;--coral:#ff5c7a;--accent:#d7a8ff;--accent-soft:#3b1f52}}
-:root[data-theme="dark"][data-palette="aurora"]{--bg:#07121a;--surface:#0f1d28;--surface2:#162736;--line:#223545;--lime:#53f0c8;--coral:#ff7ab8;--accent:#b7a4ff;--accent-soft:#261f4d}
 :root[data-theme="dark"][data-palette="ocean"]{--bg:#070d1f;--surface:#0e1830;--surface2:#15234a;--line:#22335f;--lime:#5cc8ff;--coral:#ff6f9c;--accent:#93a7ff;--accent-soft:#1a2760}
-:root[data-theme="dark"][data-palette="sunset"]{--bg:#150c16;--surface:#211422;--surface2:#2c1a2e;--line:#43264a;--lime:#ffb627;--coral:#ff5c7a;--accent:#d7a8ff;--accent-soft:#3b1f52}
 
 /* fondo animado */
 #bgfx{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
 .herobg{display:none}
-.pal{display:flex;gap:7px;align-items:center;padding:0 4px}
-.pal button{width:20px;height:20px;border-radius:50%;border:2px solid var(--ink);padding:0;cursor:pointer;transition:transform .15s}
-.pal button:hover{transform:scale(1.2) rotate(-8deg)}
-.pal button[aria-pressed="true"]{box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--ink)}
-@media (max-width:640px){.pal{gap:5px}.pal button{width:16px;height:16px}}
 @media (max-width:460px){.links a.cta{display:none}}
 body,.card,.stat,.skill,.job,.edu,.facts,header.nav{transition:background-color .5s,border-color .5s}
 </style>
@@ -250,7 +239,7 @@ body,.card,.stat,.skill,.job,.edu,.facts,header.nav{transition:background-color 
 <header class="nav"><div class="wrap">
   <a class="logo" href="#top">José de Jesús<span>.</span></a>
   <nav class="links" aria-label="Main"><a href="#products">Products</a><a href="#experience" class="opt">Experience</a><a href="#skills" class="opt">Skills</a><a href="#projects" class="opt">Projects</a><a href="#about" class="opt">About</a><a href="#education" class="opt">Education</a><a href="#contact" class="cta">Contact</a></nav>
-  <div class="right"><div class="pal" role="group" aria-label="Color palette"><button type="button" data-pal="aurora" title="Aurora" aria-label="Aurora" aria-pressed="false" style="background:linear-gradient(135deg,#53f0c8 50%,#5b2fd1 50%)"></button><button type="button" data-pal="ocean" title="Ocean" aria-label="Ocean" aria-pressed="false" style="background:linear-gradient(135deg,#5cc8ff 50%,#2f4bdc 50%)"></button><button type="button" data-pal="sunset" title="Sunset" aria-label="Sunset" aria-pressed="false" style="background:linear-gradient(135deg,#ffb627 50%,#7a2fc9 50%)"></button><button type="button" data-pal="lima" title="Lime" aria-label="Lime" aria-pressed="false" style="background:linear-gradient(135deg,#d4ff3a 50%,#5b3df5 50%)"></button></div><a class="lang" href="../" hreflang="es" lang="es" title="Español">ES</a><button class="theme" id="theme" type="button" aria-label="Toggle light and dark mode"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button></div>
+  <div class="right"><a class="lang" href="../" hreflang="es" lang="es" title="Español">ES</a><button class="theme" id="theme" type="button" aria-label="Toggle light and dark mode"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button></div>
 </div></header>
 
 <main id="main" class="wrap">
@@ -370,12 +359,7 @@ document.querySelectorAll('.card,.stat,.skill').forEach(function(c){
 <script>
 // Paleta + fondo animado (canvas)
 (function(){
-var root=document.documentElement,pals=['aurora','ocean','sunset','lima'];
-try{var sp=localStorage.getItem('palette');if(sp&&pals.indexOf(sp)>-1)root.setAttribute('data-palette',sp)}catch(e){}
-var btns=document.querySelectorAll('.pal button');
-function mark(){var c=root.getAttribute('data-palette');btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.pal===c?'true':'false')})}
-btns.forEach(function(b){b.addEventListener('click',function(){root.setAttribute('data-palette',b.dataset.pal);try{localStorage.setItem('palette',b.dataset.pal)}catch(e){}mark()})});
-mark();
+var root=document.documentElement;
 
 var cv=document.getElementById('bgfx');if(!cv||!cv.getContext)return;
 var ctx=cv.getContext('2d'),reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
